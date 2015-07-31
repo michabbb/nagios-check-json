@@ -11,7 +11,8 @@ var options = {
     host: host,
     port: port,
     path: path,
-    method: 'GET'
+    method: 'GET',
+    headers: {'user-agent': 'nagios'}
 };
 
 http.request(options, function(res) {
